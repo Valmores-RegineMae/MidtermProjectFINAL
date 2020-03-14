@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+      <title>MY WEB FOLIO</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      
+      <style>
+      body {font-family: "Montserrat", sans-serif}
+      .mySlides {display: none}
+      </style>
+      
+    <body>
+      <!-- Navbar -->
+      <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home w3-xlarge"></i>  HOME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><i class="fa fa-user w3-xlarge"></i>    ABOUT</a>
+          <a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><i class="fa fa-camera w3-xlarge"></i>     GALLERY</a>
+          <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><i class="fa fa-eye w3-xlarge"></i>   PORTFOLIO</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><i class="fa fa-envelope w3-xlarge"></i>     CONTACT</a>
+          
+          <div class="search-container w3-padding-large w3-right">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search..." name="search">
+              <button type="submit"  style="background: #ffeead;"><i class="fa fa-search"></i> Search</button>
+            </form>
+          </div>
+        
+        </div>
+
+        <!--End Navbar-->
+      </div>
+      
+      <!-- Navbar on small screens-->
+      <div id="navHome" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+        <a href="#gallery" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALLERY</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+      </div>
+      
+      <!-- Page content -->
+      <div class="w3-content" style="max-width:2000px; margin-top:46px; background: #bccad6">
+        
+        <!-- Automatic Slideshow Images -->
+        <div class="mySlides w3-display-container w3-center">
+          <img src="wel.jpg" style="width:100%; height:auto">
+          <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+
+          </div>
+        </div>
+        
+        <div class="mySlides w3-display-container w3-center">
+          <img src="girl.jpg" style="width:100%; height:auto;">
+          <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3 class="display-3 text-white centered"><strong><span class="w3-hide-small">I'm </span>Regine Mae</strong></h3>
+            <h4 class="lead text-white">Welcome to my Website!</h4>
+          </div>
+        </div>
+        
+        <div class="mySlides w3-display-container w3-center">
+          <img src="lappy.jpeg" style="width:100%; height:auto;">
+          <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+
+          </div>
+        </div>
+        
+        <!--About-->
+        <div class="w3-container w3-content w3-center w3-justify w3-padding-64" id="about">
+          <img src="me.jpg" alt="Me" class="w3-image w3-padding-32" width="400" height="290">
+          <h2 class="text-body"><strong>Regine Mae R. Valmores</strong></h2>
+          <hr class="solid">
+          <p class="w3-justify w3-text-black">Hi, I'm Regine Mae! A student of University of Science and Technology in Southern Philippines. I am an animal lover and loves to take photos of beautiful sceneries. 
+            For the past year, I've been studying in USTP as an Information Technology student to learn and to know where I excel the most, so that it will help me what specific job I will pursue in the future. 
+            My greatest joy is to spend time with my whole family and friends. And I want to inspire others especially the students that even if we are struggling right now, success comes after. Because as the qoute says, "It will be stormy now, but it won't rain forever." 
+            No matter how much it hurts we feel at this moment, someday we will look back and realize that our struggles change our lives for the better.
+          </p>
+          <hr>
+          
+          <h4 class="w3-padding-16 w3-text-black">Technical Skills</h4>
+          <br>
+          <h5 class="w3-wide w3-text-black">Photography</h5>
+          <br>
+          <div class="w3-white w3-round-xlarge">
+            <div class="w3-dark-grey w3-round-xlarge" style="height:28px;width:80%">80%</div>
+          </div>
+          <br>
+          <h5 class="w3-wide w3-text-black">Adobe Photoshop</h5>
+          <br>
+          <div class="w3-white w3-round-xlarge">
+            <div class="w3-dark-grey w3-round-xlarge" style="height:28px;width:85%">85%</div>
+          </div>
+          
+          <!--Sign Up-->
+          <div class="w3-row-padding w3-padding-64" style="margin:50px 0">
+            <div class="w3-half w3-margin-bottom">
+              <img src="camsa.jpg" alt="Photography" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p><b>Photograhy</b></p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('signupModal').style.display='block'">Sign Up</button>
+              </div>
+            </div>
+            
+            <div class="w3-half w3-margin-bottom">
+              <img src="photo.jpg" alt="Preset" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p><b>Adobe Photoshop</b></p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('signupModal').style.display='block'">Sign Up</button>
+              </div>
+            </div>
+
+            <!--End Sign Up-->
+          </div>
+          
+          <!--End About-->
+        </div>
+        
+        
+        <!-- My Price -->
+        <div id="signupModal" class="w3-modal">
+          <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+              <span onclick="document.getElementById('signupModal').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+              <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>My Price</h2>
+            </header>
+            
+            <div class="w3-container">
+              <br>
+              <p><label><i class="fa fa-credit-card-alt"></i>  ₱ 300 per hour</label></p>
+              <input class="w3-input w3-border" type="text" placeholder="Hours">
+              <br>
+              <p><label><i class="fa fa-user-circle-o w3-large"></i> Send to:</label></p>
+              <input class="w3-input w3-border" type="text" placeholder="Enter Email">
+              <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+              <button class="w3-button w3-red w3-section" onclick="document.getElementById('signupModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+              <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+            </div>
+          </div>
+          
+          <!--End My Price -->
+        </div>
+        
+        
+        <!-- Gallery -->
+        <div id="gallery" style=" background: #eca1a6">
+          <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="text-body">Gallery</h2>
+            <hr class="solid" style="width:140px">
+            
+            <!--Grid-->
+            <div class="w3-row w3-container" style="margin:40px 0">
+              <div class="w3-half w3-container">
+                <div class="w3-topbar w3-border-amber">
+                  <img src="sakura.jpeg" style="width:100%">
+                  <h2>Summer Tree</h2>
+                </div>
+              </div>
+              
+              <div class="w3-half w3-container">
+                <div class="w3-topbar w3-border-amber">
+                  <img src="trio.jpeg" style="width:100%">
+                  <h2>Bestfriends</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3-row w3-container" style="margin:10px 0">
+              <div class="w3-half w3-container">
+                <div class="w3-topbar w3-border-amber">
+                  <img src="pizza.jpeg" style="width:100%">
+                  <br>
+                  <h2>I Love Pizza</h2>
+                </div>
+              </div>
+              
+              <div class="w3-half w3-container">
+                <div class="w3-topbar w3-border-amber">
+                  <img src="japan.jpeg" style="width:100%">
+                  <h2>Suki Desu</h2>
+                </div>
+              </div>
+            </div>
+            
+            <div class="w3-row w3-container" style="margin:30px 0">
+              <div class="w3-half w3-container">
+                <div class="w3-topbar w3-border-amber">
+                  <img src="tea.jpg" style="width:100%">
+                  <h2>Me and Ate Irish</h2>
+                </div>
+              </div>
+              
+              <div class="w3-half w3-container">
+                <div class="w3-topbar w3-border-amber">
+                  <img src="silhoute.jpg" style="width:100%">
+                  <h2>Friendship</h2>
+                </div>
+              </div>
+            </div>
+
+          <!--End Gallery-->
+        </div>
+        
+        <!--Portfolio-->
+        <div id="portfolio" style=" background: #e4d1d1">
+          <div class="w3-content w3-padding-64 w3-margin-top" style="max-width:1250px;">
+            <h2 class="text-body">PROFILE</h2>
+            <hr class="solid" style="width:180px">
+          </div>
+          
+          <!--Grid-->
+          <div class="w3-row-padding">
+            
+            <!-- Left Column -->
+            <div class="w3-third">
+              
+              <div class="text-body w3-card-4">
+                <div class="w3-display-container">
+                  <img src="valmores.JPG" style="width:100%" alt="Avatar">
+                  <div class="w3-display-position w3-container w3-text-black">
+                    <br>
+                    <h3><strong>Regine Mae Valmores</strong></h3>
+                  </div>
+                </div>
+                
+                <div class="w3-container">
+                  <br>
+                  <br>
+                  <br>
+                  <p><i class="fa fa-id-badge fa-fw w3-margin-right w3-large w3-text-teal"></i>Student</p>
+                  <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-teal"></i>University of Science and Technology of Southern Philippines</p>
+                  <p><i class="fa fa-female fa-fw w3-margin-right w3-large w3-text-teal"></i>Female</p>
+                  <p><i class="fa fa-calendar-check-o fa-fw w3-margin-right w3-large w3-text-teal"></i>July 16, 1999</p>
+                  <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Cagayan de Oro City, Philippines</p>
+                  <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>valmores.reginemae@gmail.com</p>
+                  <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+63 9265773582</p>
+                  <hr>
+                  
+                  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                  <p>Photography</p>
+                  <div class="w3-light-grey w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+                  </div>
+                  
+                  <p>Adobe Photoshop</p>
+                  <div class="w3-light-grey w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">
+                      <div class="w3-center w3-text-white">85%</div>
+                    </div>
+                  </div>
+                  <br>
+                  
+                  <p class="w3-large"><b><i class="fa fa-language fa-fw w3-margin-right w3-text-grey"></i>Languages</b></p>
+                  <p>English</p>
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
+                  </div>
+                  
+                  <p>Filipino</p>
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+                  </div>
+                  
+                  <p>Spanish</p>
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-round-xlarge w3-teal" style="height:24px;width:20%"></div>
+                  </div>
+                  <br>
+                </div>
+              
+              </div><br>
+
+              <!-- End Left Column -->
+            </div>
+            
+            <!-- Right Column -->
+            <div class="w3-twothird">
+              
+              <div class="w3-container w3-card">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educational Background</h2>
+                <br>
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>University of Science and Technology of Southern Philippines</b></h5>
+                  <h6 class="w3-text-teal"><i class="fa fa-laptop fa-fw w3-margin-right"></i>Bachelor of Science in Information Technology</h6>
+                  <br>
+                  <p>Currently studying Programming, Web Systems, Information Management, Networking 1</p>
+                  <hr>
+                </div>
+                
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b><i class="fas fa-user-graduate fa-fw w3-margin-right"></i>Senior High School - Bulua National High School</b></h5>
+                  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2018</h6>
+                  <br>
+                  <p>Accountancy Business and Management</p>
+                  <p><i class="fas fa-award fa-fw w3-margin-right w3-text-teal"></i>With Honors</p>
+                  <hr>
+                </div>
+                
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b><i class="fas fa-user-graduate fa-fw w3-margin-right"></i>Junior High School - Bulua National High School</b></h5>
+                  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2016</h6>
+                  <br>
+                  <p><i class="fas fa-award fa-fw w3-margin-right w3-text-teal"></i>Service Awardee</p>
+                  <hr>
+                </div>
+                
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b><i class="fas fa-user-graduate fa-fw w3-margin-right"></i>Elementary - Bulua Central School</b></h5>
+                  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2012</h6>
+                  <br><br>
+                </div>
+              </div>
+              
+              <div class="w3-container w3-card w3-margin-bottom">
+                <br>
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+                <br>
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>Cashier / Department of Social Welfare and Development</b></h5>
+                  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2018 - May 2018</h6>
+                  <br>
+                  <p>Summer Job</p>
+                  <hr>
+                </div>
+                
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>Special Program for Employment of Students / Public Employment Service Office City Hall</b></h5>
+                  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2 - May 29, 2017</h6>
+                  <br>
+                  <p>Summer Job</p>
+                  <hr>
+                </div>
+                
+                <div class="w3-container">
+                  <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-handshake-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Volunteer Experience</h2>
+                  <br>
+                  <p><i class="fas fa-tree fa-fw w3-margin-right w3-text-teal"></i>Tree Planting</p><br>
+                </div>
+              </div>
+              
+            </div>
+            <!-- End Right Column -->
+          </div>
+          <!-- End Grid -->
+        
+        </div>
+        <!--End Portfolio-->
+        
+        <!--Contact-->
+        <div id="contact" style=" background: #b0aac0">
+          <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">CONTACT</h2>
+            <p class="text-dark w3-center"><i>For more information: </i></p>
+            <div class="w3-row w3-padding-32">
+              <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> Cagayan de Oro, Philippines<br>
+                <i class="fa fa-phone" style="width:30px"></i> Phone: +63 9265773582 <br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: valmores.reginemae@gmail.com<br>
+              </div>
+              
+              <div class="w3-col m6">
+                <form action="/action_page.php" target="_blank">
+                  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                    </div>
+                    
+                    <div class="w3-half">
+                      <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                  </div>
+                  
+                  <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                  <button class="w3-button w3-black w3-section w3-right" type="submit" value="Submit">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--End Contact-->
+        </div>
+
+        <!-- End Page Content -->
+      </div>
+      
+      <!-- Image of location/map -->
+      <img src="map.JPG" class="w3-image w3-greyscale-min" style="width:100%">
+      <br>
+      
+      <!-- Footer -->
+      <footer class="w3-center w3-padding-64 w3-opacity w3-hover-opacity-off" style="background: #b0aac0">
+        <a href="#" class="w3-button w3-text-black"><i class="fa fa-arrow-up w3-margin-right"></i>Back to the top</a>
+        <div class="w3-xlarge w3-section">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-twitter-square w3-hover-opacity"></i>
+          <i class="	fa fa-pinterest w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-red">w3.css</a></p>
+      </footer>
+      
+      
+      <script>
+      // Automatic Slideshow - change image every 10 seconds
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000);
+      }
+      
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navHome");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      var modal = document.getElementById('signupModal');
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
